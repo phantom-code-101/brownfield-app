@@ -1,5 +1,6 @@
 [versions]
 agp = "8.6.1"
+fragmentKtx = "1.8.6"
 gradle = "8.3.2"
 kotlin = "1.9.0"
 coreKtx = "1.6.0"
@@ -15,6 +16,7 @@ react-gradle-plugin = "0.76.9"  # Updated to correct version
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentKtx" }
 androidx-swiperefreshlayout = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version.ref = "swiperefreshlayout" }
 gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
 hermes-android = { module = "com.facebook.react:hermes-android" }

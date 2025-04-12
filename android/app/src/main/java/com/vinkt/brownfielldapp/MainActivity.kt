@@ -45,6 +45,13 @@ fun MainContent(modifier: Modifier = Modifier) {
         ) {
             Text("Open React Native Screen")
         }
+        Button(
+            onClick = {
+                context.startActivity(Intent(context, MyReactFrameActivity::class.java))
+            }
+        ) {
+            Text("Open React Native Screen in Fragment")
+        }
     }
 }
 
