@@ -21,7 +21,6 @@ android {
         
         minSdk rootProject.ext.minSdkVersion
         ndkVersion rootProject.ext.ndkVersion
-        // cmakeVersion = "3.22.1"
         multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -40,7 +39,7 @@ android {
                 // Removed the unused ANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES variable
                 // Simplified CMake arguments to only include necessary flags
                 // Enabled Prefab for better native module support
-                //Added the -Wno-dollar-in-identifier-extension flag to suppress the warning
+                // Added the -Wno-dollar-in-identifier-extension flag to suppress the warning
                 // Maintains all other necessary build configurations
                 // Cleans build directories before rebuilding
                 arguments "-DANDROID_STL=c++_shared","-DCMAKE_CXX_FLAGS=-Wno-dollar-in-identifier-extension"
@@ -75,13 +74,6 @@ android {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
         }
     }
-
-    // externalNativeBuild {
-    //     cmake {
-    //         path "../node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt"
-    //         version "3.22.1"
-    //     }
-    // }
 }
 
 dependencies {
@@ -107,9 +99,4 @@ dependencies {
     
     // Required for new architecture
     implementation(libs.androidx.swiperefreshlayout)
-
-    implementation "androidx.concurrent:concurrent-futures:1.1.0"
-    implementation "androidx.work:work-runtime:2.8.1"
-    implementation "androidx.asynclayoutinflater:asynclayoutinflater:1.0.0"
-    implementation "org.jetbrains.kotlin:kotlin-reflect:1.9.25"
 }
