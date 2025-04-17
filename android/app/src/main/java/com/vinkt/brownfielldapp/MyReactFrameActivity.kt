@@ -14,7 +14,7 @@ class MyReactFrameActivity : AppCompatActivity(), DefaultHardwareBackBtnHandler 
         launchOptions.putString("message", "my value")
 
         val fragment = ReactFragment.Builder()
-            .setComponentName("HelloWorld")
+            .setComponentName("GreenfieldHome")
             .setLaunchOptions(launchOptions)
             .build()
 

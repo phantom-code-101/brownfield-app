@@ -7,6 +7,7 @@ plugins {
 react {
     // Needed to enable Autolinking - https://github.com/react-native-community/cli/blob/master/docs/autolinking.md
     autolinkLibrariesWithApp()
+    entryFile = file("../../src/index.js")
 }
 
 android {
@@ -74,6 +75,12 @@ android {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
         }
     }
+    
+//    externalNativeBuild {
+//        cmake {
+//            path "$projectDir/src/main/jni/CMakeLists.txt"
+//        }
+//    }
 }
 
 dependencies {

@@ -6,7 +6,7 @@ import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint
 import com.facebook.react.defaults.DefaultReactActivityDelegate
 
 class MyReactActivity : ReactActivity() {
-    override fun getMainComponentName() = "HelloWorld"
+    override fun getMainComponentName() = "GreenfieldHome"
 
     override fun createReactActivityDelegate(): ReactActivityDelegate =
         DefaultReactActivityDelegate(
